@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="DiscountCalcApp">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <title>Discount Calculator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="well">
+            <h1 class="brand">Discount calculator</h1>
+            <div ng-controller="DiscountCalculatorController as discountCalc" class="contrl">
+                <h3 id="all_tags"> Discounted Fee : {{discountCalc.discounted_fee}}</h3>
+                <form ng-submit="discountCalc.generate_keywords()">
+                    <input class="form-control" type="number" ng-model="discountCalc.fee" placeholder="Enter your initial fee" required>
+                    <input class="form-control" type="number" ng-model="discountCalc.referred" placeholder="Number of students referrd" required>
+                    <input class="form-control" type="number" ng-model="discountCalc.disc" placeholder="Enter discount percentage. Default is 10 percent">
+                    <input class="btn btn-block btn-lg btn-success get-location" type="submit" value="Calculate Discount">
+                </form>
+            </div>
+        </div>
+        <div style="text-align: center"> Calculator is Created by <a class="brand" href="http://mutafaf.com">mutafaf.com</a> &copy; All rights reserved</div>
+        <div style="text-align: center"> Code available at <a class="brand" href="https://github.com/mutafaf/discount">GitHub</a></div>
+    </div>
+</body>
+
+</html>
