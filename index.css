@@ -36,17 +36,17 @@ input {
 }
 .btn {
   border-radius: 0;
-  background: #aeea00;
-  border: #aeea00;
+  background: #2196f3;
+  border: #2196f3;
 }
 .btn:hover {
   background: #d3e458;
 }
 .form-control {
-  border: 1px solid #aeea00;
+  border: 1px solid #2196f3;
 }
 .form-control:focus {
-  border-color: #aeea00;
+  border-color: #2196f3;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(174, 234, 0)
 ;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(174, 234, 0);
@@ -86,5 +86,5 @@ a {
   padding: 19px;
 }
 .brand {
-  color: #aeea00;
+  color: #2196f3;
 }
